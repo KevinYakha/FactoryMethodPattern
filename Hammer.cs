@@ -6,6 +6,8 @@
 
         public Hammer(int attackValue)
         {
+            this.name = "Hammer";
+            this.id = (int)ItemType.Hammer;
             this.attackValue = attackValue;
         }
 

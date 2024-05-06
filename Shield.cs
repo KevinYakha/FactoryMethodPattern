@@ -2,10 +2,12 @@
 {
     public class Shield : Item
     {
-        public int defenseValue {  get; set; }
+        public int defenseValue { get; set; }
 
         public Shield(int defenseValue)
         {
+            this.name = "Shield";
+            this.id = (int)ItemType.Shield;
             this.defenseValue = defenseValue;
         }
 

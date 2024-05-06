@@ -6,8 +6,10 @@
 
         public Shield(int defenseValue)
         {
+            Random random = new Random();
+
             this.name = "Shield";
-            this.id = (int)ItemType.Shield;
+            this.id = random.Next(DateTime.Now.Microsecond);
             this.defenseValue = defenseValue;
         }
 

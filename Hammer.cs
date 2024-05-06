@@ -6,8 +6,10 @@
 
         public Hammer(int attackValue)
         {
+            Random random = new Random();
+
             this.name = "Hammer";
-            this.id = (int)ItemType.Hammer;
+            this.id = random.Next(DateTime.Now.Microsecond);
             this.attackValue = attackValue;
         }
 

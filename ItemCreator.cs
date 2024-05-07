@@ -6,11 +6,7 @@
 
         public Item createItem(ItemType itemType, int attribute)
         {
-            Item item = itemFactory(itemType, attribute);
-
-            item.useItem();
-
-            return item;
+            return itemFactory(itemType, attribute);
         }
 
         public Item createRandomItem(int attributeMin, int attributeMax)

@@ -1,6 +1,6 @@
 ﻿namespace FactoryMethodPattern
 {
-    public class itemBuilder: ItemCreator
+    public class itemBuilder : ItemCreator
     {
         protected override Item itemFactory(ItemType itemType, int attribute)
         {

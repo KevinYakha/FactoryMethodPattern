@@ -6,5 +6,6 @@
         public int id { get; set; }
 
         public abstract void useItem();
+        public abstract int getAttribute();
     }
 }

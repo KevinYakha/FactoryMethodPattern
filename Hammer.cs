@@ -17,5 +17,10 @@
         {
             Console.WriteLine($"You attack with your hammer, dealing {attackValue} damage.");
         }
+
+        public override int getAttribute()
+        {
+            return attackValue;
+        }
     }
 }

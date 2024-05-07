@@ -17,5 +17,10 @@
         {
             Console.WriteLine($"You defend yourself with your shield, mitigating {defenseValue} damage.");
         }
+
+        public override int getAttribute()
+        {
+            return defenseValue;
+        }
     }
 }

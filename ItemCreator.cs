@@ -13,17 +13,22 @@
             return item;
         }
 
-        public Item createRandomItem()
+        public Item createRandomItem(int attributeMin, int attributeMax)
         {
             Random random = new Random(DateTime.Now.Microsecond);
 
             ItemType randomType = (ItemType)random.Next((int)ItemType.COUNT);
-            int randomAttribute = random.Next(10, 30);
+            int randomAttribute = random.Next(attributeMin, attributeMax + 1);
 
             Item randomItem = itemFactory(randomType, randomAttribute);
             randomItem.useItem();
 
             return randomItem;
+        }
+
+        public Item createRandomItem()
+        {
+            return createRandomItem(10, 30);
         }
     }
 }

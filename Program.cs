@@ -4,6 +4,8 @@
     {
         public static void Main(string[] args)
         {
+            Player player = Player.getInstance();
+
             ItemCreator inventory = new itemBuilder();
 
             Item random1 = inventory.createRandomItem();

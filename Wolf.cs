@@ -2,7 +2,7 @@
 {
     public class Wolf : Creature
     {
-        Wolf()
+        public Wolf()
         {
             health = 20;
             attackValue = 15;
@@ -11,6 +11,7 @@
         public override void attack(Mob target)
         {
             target.health -= attackValue;
+            Console.WriteLine($"The {this} attacks the {target} with its fangs for {attackValue} damage");
         }
 
         public override string getDescription()
